@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="icon" href="./assets/img/logo.png" type="image/x-icon">
+
+        <title>Web Accesible</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <!-- Aqui podemos incluir un logo -->
+                <a href="#" class="nav__logo" title="Home">Web Accesible</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link" title="Home">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#accesibilidad" class="nav__link" title="Seccion de Accesibilidad Web">
+                                <i class="uil uil-notes nav__icon"></i> Accesibilidad Web
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#pautas" class="nav__link" title="Seccion ¿Por donde Empezar?">
+                                <i class="uil uil-question-circle nav__icon"></i> ¿Por donde Empezar?
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#wcag" class="nav__link" title="Seccion Pautas WCAG">
+                                <i class="uil uil-step-forward nav__icon"></i> Pautas WCAG
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close " id="nav-close"></i>
+                </div>
+                <div class="nav__btns">
+                    <!-- Cambiar thema -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <!-- aqui ira nuestro link a github -->
+                            <a href="#" target="_blank" class="home__social-icon" title="Link al Repositorio en Github">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                        <div class="home__img" >
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" x="20" y="26" xlink:href="assets/img/personasCapacidadesEspeciales.png" alt="imagen de personas con capacidades especiales" title="imagen de personas con capacidades especiales"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Diseño y desarrollo de una página web accesible</h1>
+                            <h3 class="home__subtitle">para personas con capacidades especiales: Una revisión sistemática de mejores prácticas</h3>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#accesibilidad" class="home__scroll-button button--flex" title="Boton para bajar">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SECCION ACCESIBILIDAD WEB ====================-->
+            <section class="accesibilidad section" id="accesibilidad">
+                <h2 class="section__title">La Accesibilidad Web</h2>
+                <span class="section__subtitle">Y su importancia</span>
+
+                <div class="accesibilidad__container container grid">
+                    <img src="assets/img/Accesibilidad-web-removebg-preview.png" alt="imagen animada sobre la accesibilidad web" class="accesibilidad__img" title="imagen animada sobre la accesibilidad web">
+
+                    <div class="accesibilidad__data">
+                        <p class="accesibilidad__description">
+                            La accesibilidad web es un tema de gran importancia en la actualidad, ya que garantiza que todas las personas, independientemente de sus discapacidades, puedan acceder y utilizar de manera efectiva los sitios web. Sin embargo, a pesar de los avances tecnológicos, aún existe una brecha significativa en la accesibilidad de los sitios web para personas con discapacidad.
+                        </p>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== POR DONDE EMPEZAR (PAUTAS) ====================-->
+            <section class="pautas section" id="pautas">
+                <h2 class="section__title">¿Por donde empezar?</h2>
+                <span class="section__subtitle">Primero debes tener en cuenta los siguientes Aspectos</span>
+
+                <div class="pautas__container container grid">
+                    <div>
+                        <!-- pautas 1 -->
+                        <div class="pautas__content pautas__open">
+                            <div class="pautas__header">
+                                <i class="uil uil-file-plus-alt pautas__icon"></i>
+
+                                <div>
+                                    <h2 class="pautas__title">Necesidades Especiales</h2>
+                                    <span class="pautas__subtitle">Es fundamental abordar estas necesidades de manera individualizada para garantizar la accesibilidad y la inclusión.</span>
+                                </div>
+
+                                <i class="uil uil-angle-down pautas__arrow"></i>
+                            </div>
+
+                            <div class="pautas__list grid">
+                                <div class="pautas__data">
+                                    <div class="pautas__titles">
+                                        <h3 class="pautas__name">✓	Accesibilidad web</h3>
+                                        <span class="pautas__number">Asegurarse de que la página web sea compatible con lectores de pantalla y otras tecnologías de asistencia</span>
+                                    </div>
+                                </div>
+
+                                <div class="pautas__data">
+                                    <div class="pautas__titles">
+                                        <h3 class="pautas__name">✓	Subtítulos y transcripciones</h3>
+                                        <span class="pautas__number">Ofrecer subtítulos en videos y transcripciones de audio para personas con discapacidad auditiva. </span>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="pautas__data">
+                                    <div class="pautas__titles">
+                                        <h3 class="pautas__name">✓	Navegación intuitiva</h3>
+                                        <span class="pautas__number">Diseñar una estructura de navegación clara y coherente para facilitar la orientación en el sitio web. </span>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="pautas__data">
+                                    <div class="pautas__titles">
+                                        <h3 class="pautas__name">✓	Compatibilidad con dispositivos de asistencia</h3>
+                                        <span class="pautas__number">Asegurarse de que la página web sea utilizable con teclados, lectores de pantalla, joysticks </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                    </div>
+
+                    <div>
+                        <!-- pautas 2 -->
+                        <div class="pautas__content pautas__close">
+                            <div class="pautas__header">
+                                <i class="uil uil-laptop-connection pautas__icon"></i>
+
+                                <div>
+                                    <h2 class="pautas__title">Tecnologías de asistencia</h2>
+                                    <span class="pautas__subtitle">Debes Asegurarte que tu Web sea compatible con tecnologias de asistencia</span>
+                                </div>
+
+                                <i class="uil uil-angle-down pautas__arrow"></i>
+                            </div>
+
+                            <div class="pautas__list grid">
+                                <div class="pautas__data">
+                                    <div class="pautas__titles">
+                                        <h3 class="pautas__name">✓	Los software y hardware informáticos</h3>
+                                        <span class="pautas__number">ayudan a las personas con la memoria, la atención u otros desafíos en sus habilidades de pensamiento.</span>
+                                    </div>
+                                </div>
+
+                                <div class="pautas__data">
+                                    <div class="pautas__titles">
+                                        <h3 class="pautas__name">✓	Dispositivos de asistencia informáticos o eléctricos</h3>
+                                        <span class="pautas__number">como los programas de reconocimiento de voz, los lectores de pantalla, lector de huellas, teclados virtuales y las aplicaciones de ampliación de pantalla</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           
+
+            <!--==================== PAUTAS WCAG ====================-->
+            <section class="wcag section" id="wcag">
+                <div class="container">
+                    <h2 class="section__title">Las WCAG</h2>
+                    <span class="section__subtitle">Si aun tienes dudas por donde empezar las WCAG o Pautas de Accesibilidad para el Contenido Web te seran de gran ayuda
+                        a continuacion se presentan algunas pautas claves y los beneficios que tendras al seguirlas.
+                    </span>
+                </div>
+
+                <div class="gcaw__container container grid">
+                    <!-- gcaw 1 -->
+                    <div class="gcaw__content">
+                        <div>
+                            <i class="uil uil-yin-yang gcaw__icon"></i>
+                            <h3 class="gcaw__title">Los contrastes</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link gcaw__button">
+                            Ver Mas
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="gcaw__modal">
+                            <div class="gcaw__modal-content">
+                                <h4 class="gcaw__modal-title">Las normas de WACG 2.1 sugieren que es fundamental tener en cuenta el contraste, porque ayuda a que personas con baja visión o algún tipo de daltonismo perciban mejor las imágenes y tengan una mejor lectura de los textos</h4>
+                                <i class="uil uil-times gcaw__modal-close"></i>
+
+                                <ul class="gcaws__modal-gcaws grid">
+                                    <li class="gcaws__modal-gcaw">
+                                        <i class="uil uil-check-circle gcaw__modal-icon"></i>
+                                        <p>La presentación visual de texto e imágenes de texto tiene una relación de contraste de, al menos, 4.5:1, excepto en los siguientes casos: Textos grandes</p>
+                                    </li>
+
+                                    <li class="gcaws__modal-gcaw">
+                                        <i class="uil uil-check-circle gcaw__modal-icon"></i>
+                                        <p>Los textos de gran tamaño y las imágenes de texto de gran tamaño tienen una relación de contraste de, al menos, 3:1.</p>
+                                    </li>
+
+                                    <li class="gcaws__modal-gcaw">
+                                        <i class="uil uil-check-circle gcaw__modal-icon"></i>
+                                        <p>El mayor contraste de color se da entre el negro y el blanco y su relación es de 1 a 21 (que se representa 1:21) </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gcaw 2 -->
+                    <div class="gcaw__content">
+                        <div>
+                            <i class="uil uil-palette gcaw__icon"></i>
+                            <h3 class="gcaw__title">Manejo del color</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link gcaw__button">
+                            Ver Mas
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="gcaw__modal">
+                            <div class="gcaw__modal-content">
+                                <h4 class="gcaw__modal-title">La WCAG 2.1 establece las siguientes pautas como parte de los criterios para cumplir con el nivel A de accesibilidad</h4>
+                                <i class="uil uil-times gcaw__modal-close"></i>
+
+                                <ul class="gcaws__modal-gcaws grid">
+                                    <li class="gcaws__modal-gcaw">
+                                        <i class="uil uil-check-circle gcaw__modal-icon"></i>
+                                        <p>El color no se usa como único medio visual para transmitir la información, indicar una acción, solicitar una respuesta o distinguir un elemento visual.</p>
+                                    </li>
+
+                                    <li class="gcaws__modal-gcaw">
+                                        <i class="uil uil-check-circle gcaw__modal-icon"></i>
+                                        <p>En los casos que sea importante conocer el color, este se debe mencionar de manera textual.</p>
+                                    </li>
+
+                                    <li class="gcaws__modal-gcaw">
+                                        <i class="uil uil-check-circle gcaw__modal-icon"></i>
+                                        <p>Es importante considerar que existen varios tipos de daltonismo, lo que hace que los colores se perciban de manera diferente</p>
+                                    </li>
+
+                                    <li class="gcaws__modal-gcaw">
+                                        <i class="uil uil-check-circle gcaw__modal-icon"></i>
+                                        <p>Las personas que son ciegas de nacimiento no tienen puntos de referencia para distinguir la diferencia entre los colores</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gcaw 3 -->
+                    <div class="gcaw__content">
+                        <div>
+                            <i class="uil uil-medal gcaw__icon"></i>
+                            <h3 class="gcaw__title">Beneficios de la accesibilidad web</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link gcaw__button">
+                            Ver Mas
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="gcaw__modal">
+                            <div class="gcaw__modal-content">
+                                <h4 class="gcaw__modal-title">Tener una página web accesible trae consigo numerosas ventajas, no tan solo para la efectividad y productividad de tu propia empresa, sino para la sociedad en su conjunto.</h4>
+                                <i class="uil uil-times gcaw__modal-close"></i>
+
+                                <ul class="gcaws__modal-gcaws grid">
+                                    <li class="gcaws__modal-gcaw">
+                                        <i class="uil uil-check-circle gcaw__modal-icon"></i>
+                                        <p>Aumentar el número de visitantes potenciales</p>
+                                    </li>
+
+                                    <li class="gcaws__modal-gcaw">
+                                        <i class="uil uil-check-circle gcaw__modal-icon"></i>
+                                        <p>Cumplir con los requisitos web, permitiendo posicionar nuestra página en cualquier navegador.</p>
+                                    </li>
+
+                                    <li class="gcaws__modalg-caw">
+                                        <i class="uil uil-check-circle gcaw__modal-icon"></i>
+                                        <p> Fomentar la responsabilidad social corporativa, poniendo el foco en las personas y eliminando barreras y la brecha digital, para facilitarles así el acceso a tu web</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONCLUCION ====================-->
+            <section class="conclucion section">
+                <div class="conclucion__bg">
+                    <div class="conclucion__container container grid">
+                        <div class="conclucion__data">
+                            <h2 class="conclucion__title">Conclucion:</h2>
+                            <p class="conclucion__description">
+                                La accesibilidad web combina la programación, el diseño y la tecnología para construir un Internet sin barreras que 
+                                permita a todos los usuarios el entendimiento, el aprendizaje, la navegación y la plena interacción con la web.
+                                <br><br>
+                                Recuerda hacer un buen manejo de los colores y sus contrastes en tu pagina web, manten un diseño bien estructurado para hacer
+                                facil la navegacion por tu pagina web, intenta mantener un diseño simple e intuitivo para mejorar la experiencia de Usuario de tus clientes y asi garantizar la accesibilidad para todos.
+                            </p>
+                        </div>
+                        <img src="assets/img/imagen-conclucion.jpg" alt="imagen de niños con capacidades especiales utilizando una computadora" class="conclucion__img" title="imagen de niños con capacidades especiales utilizando una computadora">
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container">
+                    <div class="footer__socials">
+                        <a href="#" target="_blank" class="footer__social" title="Link a Facebook">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+
+                        <a href="#" target="_blank" class="footer__social" title="Link a Instagran">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+
+                        <a href="#" target="_blank" class="footer__social" title="Link a Twitter">
+                            <i class="uil uil-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer__copy">&copy; Diseño Web Adaptable</p>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up" title="Boton para Subir">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
